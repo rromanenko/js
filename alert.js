@@ -1,4 +1,9 @@
 'use strict';
-// let name = prompt("Enter your name", "Your name");
-// alert( `Hello, ${Number.MAX_VALUE}` );
 // console.log(Number.MAX_VALUE);
+let age = prompt("Enter your age", "15");
+
+if (age >= 14 && age <= 90) {
+  alert(`Your age is ${age}` );
+} else {
+  alert("You are too young!");
+}
