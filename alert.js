@@ -1,10 +1,8 @@
 'use strict';
 // console.log(Number.MAX_VALUE);
 
-function checkAge(age) {
-  return (age >= 18) || confirm("Does your mother know you are here?")
-}
+let ask = confirm("Do you agree?") ?
+  () => alert("You agreed.") :
+  () => alert("You canceled the execution.");
 
-let age;
-age = +prompt("Your age: ", "");
-alert(checkAge(age));
+ask();
